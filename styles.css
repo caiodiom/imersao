@@ -62,7 +62,24 @@ section {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    section::-webkit-scrollbar {
+        width: 10px;
 }
+
+  }
+  
+  
+  
+  
+  section::-webkit-scrollbar-thumb {
+    background-color:#30475eb9;
+    border-radius: 10px;
+  }
+  
+  section::-webkit-scrollbar-track {
+    background-color: #3ddc84;
+    border-radius: 10px;
+  }
 
 /* Estiliza os inputs dentro das seções */
 section input {
@@ -96,7 +113,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    height: 30vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
@@ -169,6 +186,11 @@ footer {
     width: 100%; /* Largura total da página */
     bottom: 0px; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+.fim {
+
+    
+      
 }
 
 @media (max-width: 768px) {
