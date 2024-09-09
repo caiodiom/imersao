@@ -7,9 +7,12 @@ body {
     background-color: #aaf1b0ce; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    
 
 }
 .logo {
@@ -47,6 +50,7 @@ h2 {
     margin: 0 auto; /* Margens automáticas centralizam horizontalmente */
     text-align: center;
     text-align: justify;
+
 }
 
 p {
@@ -187,61 +191,36 @@ footer {
     bottom: 0px; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
-.fim {
 
-    
-      
-}
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+  
+  @media (max-width: 1200px) {
+    /* Estilos para telas médias */
+    section {
+      width: 90%;
     }
-
-    section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    /* ... */
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para tablets */
+    section {
+      width: 95%;
     }
-
-    .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    /* ... */
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para smartphones */
+    section {
+      width: 100%;
     }
-
-    .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 480px) {
-
-    h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
-    }
-
-    section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
-    }
-
-    section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
-    }
-
-    .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        align-items: center;
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
-    }
-}
+    /* ... */
+  }
+  
+  /* Imagens Responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantém a proporção da imagem */
+  }
