@@ -235,9 +235,13 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
+    
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+        margin-bottom: 16px;
+        line-height: 1;
     }
 
     h2 {
@@ -247,13 +251,13 @@ footer a:hover {
     }
 
     section input {
-        margin-bottom: 4px;
+        margin-bottom: 10px;
         width: 25rem; /* Largura dos inputs em telas menores */
         padding: 0.8rem; /* Espaçamento interno em telas menores */
     }
     section button {
 
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
         font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
     }
@@ -277,6 +281,12 @@ footer a:hover {
     .item-resultado h2 {
 
         font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    .fim {
+        margin-top: 10px;
+        
+    
     }
 }
 
@@ -304,6 +314,8 @@ footer a:hover {
     section button {
         padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
         font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .resultados-pesquisa {
@@ -318,5 +330,12 @@ footer a:hover {
     footer {
         align-items: center;
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        margin-top: 40px;
+    }
+
+    .fim {
+        margin-top: 15px;
+        margin-bottom: 1px;
+    
     }
 }
