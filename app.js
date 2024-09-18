@@ -1,5 +1,6 @@
 function pesquisar(termo) {
     const section = document.getElementById("resultados-pesquisa");
+    
   
     // Verifica se o termo de pesquisa está vazio
     if (!termo.trim()) {
@@ -35,9 +36,18 @@ function pesquisar(termo) {
     if (event.key === "Enter") {
       pesquisar(campoPesquisa.value);
     }
+    const footer = document.getElementById("footer");
+    footer.scrollIntoView({ behavior: "smooth" });
   });
   
   // Adiciona um event listener para o botão, chamando a mesma função pesquisar
   botaoPesquisar.addEventListener("click", () => {
     pesquisar(campoPesquisa.value);
   });
+  
+  botaoPesquisar.addEventListener("click", () => {
+    pesquisar(campoPesquisa.value);
+    const footer = document.getElementById("footer");
+    footer.scrollIntoView({ behavior: "smooth" });
+});
+
